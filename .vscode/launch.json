@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://github.com/TassnemZidan/menu-kaart.git",
+            "request": "launch",
+            "url": "https://github.com/TassnemZidan/menu-kaart.git"
+        }
+    ]
+}
