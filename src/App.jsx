@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipes";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
 import About from './About';
 import Contact from './Contact';
+import { Route, Routes} from 'react-router-dom';
+import Navbar from "./Navbar";
+
 
 const App = () => {
   const APP_ID = "0d955890";
@@ -46,14 +48,19 @@ const App = () => {
         <button className="search-button" type="sumbit">
           search
         </button>
-        <div className="App">
-      <h1>Welcome to React Router!</h1>
-      <Routes>
-      <Route path="/" element={<App />} />
-        <Route path="/Contact" element={<About />} />
-        <Route path="about" element={<Contact />} />
-      </Routes>
-    </div>
+        <div className="Index">
+        <Navbar />
+        <Routes>
+  
+          <Route exact path='/About' element={About}>
+           
+          </Route>
+          <Route exact path='/Contact' element={Contact}>
+          
+          </Route>
+        </Routes>
+      </div>
+
       </form>
       <div className="recipe">
       {recipes.map((recipe) => (

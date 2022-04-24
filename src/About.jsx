@@ -1,7 +1,6 @@
 import "./App.css";
-import * as React from "react";
+import  React from "react";
 import {Link} from "react-router-dom";
-
 
 const About= ()=> {
     return (
@@ -16,7 +15,7 @@ const About= ()=> {
         <nav>
           <Link to="/App">Home</Link>
         </nav>
-      </>
+        </>
     );
   }
 
